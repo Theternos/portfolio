@@ -29,7 +29,7 @@ html {
     scroll-behavior: smooth;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    z-index: 1;
+    z-index: 0;
 
 }
 :root{
@@ -66,6 +66,7 @@ html {
 body{
     background-color: var(--color-dark-mode);
     overflow-x: hidden;
+    z-index: 0;
 }
 
 
@@ -281,7 +282,7 @@ noscript{
     padding: 0px 20px;
     justify-content: space-between;
     position:fixed;
-    z-index: 9998;
+    z-index: 9999;
     border: 1px solid var(--color-navbarBorder-dark);
     border-radius: 50px;
     overflow: hidden;
@@ -322,7 +323,6 @@ noscript{
     width: 10px;
     border-radius: 5px;
     left: -20px;
-    z-index: -1;
 }
 .navbar-tabs-ul a{
     text-decoration: none;
@@ -1442,7 +1442,7 @@ border: none;
     .navbar{
         background-color: rgba(255, 255, 255, 0.079);
         backdrop-filter: blur(10px);
-        z-index: 99998;
+        z-index: 100000;
     }
     .navbar-tabs-ul{
     display: none;
@@ -1460,7 +1460,7 @@ border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 99999;
+    z-index: 100001;
     background-color:transparent;
 }
 .hamburgerbase{
@@ -1531,7 +1531,7 @@ border: none;
 }
 .mobiletogglemenu{
   background-color:transparent;
-  z-index: 9990;
+  z-index: 9995;
   height: 100%;
   width: 100%;
   position: fixed;
