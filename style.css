@@ -29,6 +29,7 @@ html {
     scroll-behavior: smooth;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    z-index: 1;
 
 }
 :root{
