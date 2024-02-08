@@ -1441,7 +1441,7 @@ border: none;
     .navbar{
         background-color: rgba(255, 255, 255, 0.079);
         backdrop-filter: blur(10px);
-        z-index: 9998;
+        z-index: 99998;
     }
     .navbar-tabs-ul{
     display: none;
@@ -1459,7 +1459,7 @@ border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 9999;
+    z-index: 99999;
     background-color:transparent;
 }
 .hamburgerbase{
