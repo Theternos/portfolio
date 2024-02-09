@@ -1441,8 +1441,14 @@ border: none;
     }
     .navbar{
         z-index: 999999999999;
-        -webkit-backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background: inherit;
         
+    }
+    .navbar:before {
+        box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.821);
+        filter: blur(10px);
+        background: inherit;
     }
     .navbar-tabs-ul{
     display: none;
