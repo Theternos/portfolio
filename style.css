@@ -1441,6 +1441,8 @@ border: none;
     }
     .navbar{
         z-index: 999999999999;
+        filter: blur(10px);
+        
     }
     .navbar-tabs-ul{
     display: none;
