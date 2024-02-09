@@ -1648,6 +1648,7 @@ transition-duration: 1s;
     .text-content{
         padding-left: 0px;
         width:80%;
+        margin-left: 15px;
     }
     #hello-friend{
         height: 100px;
