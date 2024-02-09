@@ -1443,6 +1443,7 @@ border: none;
         z-index: 999999999999;
         -webkit-backdrop-filter: blur(10px);
         background: inherit;
+        background-color: rgba(255, 255, 255, 0.079);
         
     }
     .navbar:before {
