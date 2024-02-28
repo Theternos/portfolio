@@ -762,7 +762,6 @@ noscript{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 45px;
     height: 45px;
     border: none;
     border-radius: 50%;
@@ -808,19 +807,19 @@ noscript{
     transition-duration: .3s;
   }
   /* hover effect on button width */
-  .resume-btn:hover {
+  .resume-btn {
     width: 130px;
     border-radius: 40px;
     transition-duration: .3s;
   }
   
-  .resume-btn:hover .sign {
+  .resume-btn .sign {
     width: 30%;
     transition-duration: .3s;
     padding-left: 20px;
   }
   /* hover effect button's text */
-  .resume-btn:hover .text {
+  .resume-btn .text {
     opacity: 1;
     width: 70%;
     transition-duration: .3s;
