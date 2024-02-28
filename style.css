@@ -901,12 +901,12 @@ noscript{
 }
 .dp img{
     width: 250px;
-    height: 105%;
+    height: 265px;
 }
 .dp::before{
     content: "";
     background-color: transparent;
-    height: 300px;
+    height: 263px;
     width: 250px;
     position: absolute;
     z-index: -2;
@@ -918,8 +918,8 @@ noscript{
 .dp::after{
     content: "";
     background-color: transparent;
-    height: 295px;
-    width: 245px;
+    height: 263px;
+    width: 250px;
     position: absolute;
     z-index: -2;
     box-shadow: 2px 2px 0px inset transparent,
