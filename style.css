@@ -1108,7 +1108,9 @@ noscript{
     border: 1px solid var(--tech-stack-box-border-color);
     overflow: hidden;
 }
-
+.project-list{
+    height: fit-content !important;
+}
 .info-div{
     width: 50%;
     height: 100%;
@@ -1151,7 +1153,7 @@ noscript{
 /* Project visit button */
 .cta {
     position: relative;
-    padding: 12px 18px;
+    padding: 14px 18px;
     transition: all 0.2s ease;
     border: none;
     background: none;
@@ -1166,7 +1168,6 @@ noscript{
     display: block;
     border-radius: 50px;
     background: #2b2f4e;
-    /* background-color: var(--color-navbarBorder-dark); */
     width: 45px;
     height: 45px;
     transition: all 0.3s ease;
@@ -1174,11 +1175,9 @@ noscript{
    
    .cta span {
     position: relative;
-    /* font-family: "Ubuntu", sans-serif; */
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: 0.05em;
-    /* color: #234567; */
     color: var(--color-light-blue);
    }
    
@@ -1189,7 +1188,7 @@ noscript{
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
-    /* stroke: #234567; */
+/*     stroke: #234567; */
     stroke: var(--color-light-blue);
     stroke-width: 2;
     transform: translateX(-5px);
@@ -1623,9 +1622,11 @@ transition-duration: 1s;
     width: 80%;
 }
 .project-box{
-
     flex-direction: column;
     height:800px;
+}
+.project-list{
+    height: fit-content !important;
 }
 .info-div{
     width: 100%;
@@ -1638,6 +1639,9 @@ transition-duration: 1s;
     height: 50%;
     padding-left: 80px;
 }
+.cta {
+    padding: 15px 18px;
+   }
   }
   
   @media screen and (max-width:768px) {
@@ -1696,6 +1700,9 @@ transition-duration: 1s;
     .dp{
         margin: 40px 0 0 0;
     }
+    .cta {
+        padding: 15.5px 18px;
+       }
 }
   
   @media screen and (max-width:500px) {
@@ -1730,7 +1737,12 @@ transition-duration: 1s;
     }
     .project-box{
         height: 550px;
-
+    }
+    .project-list{
+        height: fit-content !important;
+    }
+    .project-list tr{
+        padding: 20px 8px 20px 8px;    
     }
     .info-div{
         height: 60%;
@@ -1752,8 +1764,17 @@ transition-duration: 1s;
         height: calc(76vw/2);
 
     }
-    
-
+    .cta {
+        padding: 7px 18px;
+       }
+    .cta span {
+        font-size: 1.3rem !important;
+       }
+    .cta:before {
+        border-radius: 30px !important;
+        width: 30px;
+        height: 30px;
+    }
   }
   @media screen and (max-width:430px) {
     html {
@@ -1822,4 +1843,93 @@ transition-duration: 1s;
   
   /* responsive code above */
   
+  table {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
   
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    padding: .35em;
+    color: var(--color-ddd-color);
+    font-size: 1.7rem;
+    font-weight: 400;
+    border-bottom: 1px solid var(--tech-stack-box-border-color);
+  }
+  table tr:last-child {
+    border-bottom: 0px;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    border-bottom: 1px solid var(--tech-stack-box-border-color);
+    font-size: .80em;
+    letter-spacing: .1em;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.2em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      display: block;
+      font-size: .9em;
+      text-align: right;
+    }
+    
+    table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  
+
+.TableHeading{
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+}
+
